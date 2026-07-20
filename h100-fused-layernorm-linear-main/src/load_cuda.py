@@ -1,0 +1,27 @@
+"""Load the CUDA denominator extension, building via JIT if needed."""
+import os
+import torch
+import torch.utils.cpp_extension as ext
+
+# Bypass CUDA version check (13.1 driver is forward-compatible with 12.8 toolkit)
+_orig_check = ext._check_cuda_version
+ext._check_cuda_version = lambda *a, **k: None
+
+_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
+# Target the GPU we are running on (sm_80 = A100, sm_90 = H100, ...)
+_major, _minor = torch.cuda.get_device_capability()
+_ARCH = f"sm_{_major}{_minor}"
+
+denominator_cuda = ext.load(
+    name=f"denominator_cuda_{_ARCH}",
+    sources=[
+        os.path.join(_ROOT, "csrc", "denominator.cpp"),
+        os.path.join(_ROOT, "csrc", "denominator_kernel.cu"),
+    ],
+    extra_cuda_cflags=[f"-arch={_ARCH}", "-O3", "--use_fast_math"],
+    extra_cflags=["-O3"],
+    verbose=False,
+)
+
+ext._check_cuda_version = _orig_check

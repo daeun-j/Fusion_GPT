@@ -1,0 +1,5522 @@
+[
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V0_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:10.406535+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.086471,
+        "stddev_ms": 0.010693,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.3903,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.033752,
+        "baseline_stddev_ms": 0.003969
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V1_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:10.420151+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.030661,
+        "stddev_ms": 0.004793,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.1008,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.033752,
+        "baseline_stddev_ms": 0.003969
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V2_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:10.427475+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.078973,
+        "stddev_ms": 0.0087,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.4274,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.033752,
+        "baseline_stddev_ms": 0.003969
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V3_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:10.434544+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.024358,
+        "stddev_ms": 0.002576,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.3856,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.033752,
+        "baseline_stddev_ms": 0.003969
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_TE_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:10.441160+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "TE"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.072299,
+        "stddev_ms": 0.004988,
+        "variant": "TE"
+      },
+      "speedup": {
+        "vs_baseline": 0.4668,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.033752,
+        "baseline_stddev_ms": 0.003969
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V0_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:10.944532+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.091475,
+        "stddev_ms": 0.006865,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.3915,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.035815,
+        "baseline_stddev_ms": 0.002695
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V1_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:10.953454+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.032612,
+        "stddev_ms": 0.005019,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.0982,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.035815,
+        "baseline_stddev_ms": 0.002695
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V2_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:10.961187+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.082774,
+        "stddev_ms": 0.00619,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.4327,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.035815,
+        "baseline_stddev_ms": 0.002695
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V3_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:10.968569+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.030024,
+        "stddev_ms": 0.00299,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.1929,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.035815,
+        "baseline_stddev_ms": 0.002695
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_TE_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:10.975460+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "TE"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.075978,
+        "stddev_ms": 0.004515,
+        "variant": "TE"
+      },
+      "speedup": {
+        "vs_baseline": 0.4714,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.035815,
+        "baseline_stddev_ms": 0.002695
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V0_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:11.506211+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.092554,
+        "stddev_ms": 0.010846,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.4337,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.04014,
+        "baseline_stddev_ms": 0.003718
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V1_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:11.516248+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.030768,
+        "stddev_ms": 0.003001,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.3046,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.04014,
+        "baseline_stddev_ms": 0.003718
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V2_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:11.524154+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.083227,
+        "stddev_ms": 0.00615,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.4823,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.04014,
+        "baseline_stddev_ms": 0.003718
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V3_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:11.531526+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.030905,
+        "stddev_ms": 0.002801,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.2988,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.04014,
+        "baseline_stddev_ms": 0.003718
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_TE_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:11.539037+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "TE"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.076874,
+        "stddev_ms": 0.004506,
+        "variant": "TE"
+      },
+      "speedup": {
+        "vs_baseline": 0.5222,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.04014,
+        "baseline_stddev_ms": 0.003718
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V0_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:12.031813+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.092054,
+        "stddev_ms": 0.009791,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.3988,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.036709,
+        "baseline_stddev_ms": 0.001701
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V1_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:12.041142+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.034172,
+        "stddev_ms": 0.003429,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.0742,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.036709,
+        "baseline_stddev_ms": 0.001701
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V2_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:12.048659+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.082763,
+        "stddev_ms": 0.006933,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.4435,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.036709,
+        "baseline_stddev_ms": 0.001701
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_V3_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:12.056064+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.034109,
+        "stddev_ms": 0.003131,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.0762,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.036709,
+        "baseline_stddev_ms": 0.001701
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_attn_TE_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:12.063524+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "TE"
+      },
+      "model": {
+        "name": "OPT-125m attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 768
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.080052,
+        "stddev_ms": 0.005792,
+        "variant": "TE"
+      },
+      "speedup": {
+        "vs_baseline": 0.4586,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.036709,
+        "baseline_stddev_ms": 0.001701
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V0_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:12.507532+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.083789,
+        "stddev_ms": 0.009544,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.4101,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.034362,
+        "baseline_stddev_ms": 0.003456
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V1_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:12.518033+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.024442,
+        "stddev_ms": 0.002983,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.4059,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.034362,
+        "baseline_stddev_ms": 0.003456
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V2_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:12.526147+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.075561,
+        "stddev_ms": 0.005355,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.4548,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.034362,
+        "baseline_stddev_ms": 0.003456
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V3_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:12.533495+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.024394,
+        "stddev_ms": 0.00252,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.4086,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.034362,
+        "baseline_stddev_ms": 0.003456
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_TE_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:12.540541+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "TE"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.071174,
+        "stddev_ms": 0.00438,
+        "variant": "TE"
+      },
+      "speedup": {
+        "vs_baseline": 0.4828,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.034362,
+        "baseline_stddev_ms": 0.003456
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V0_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:13.005725+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.091928,
+        "stddev_ms": 0.009166,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.4417,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.040602,
+        "baseline_stddev_ms": 0.003891
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V1_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:13.014938+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.0326,
+        "stddev_ms": 0.003069,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.2454,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.040602,
+        "baseline_stddev_ms": 0.003891
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V2_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:13.022180+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.082864,
+        "stddev_ms": 0.006147,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.49,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.040602,
+        "baseline_stddev_ms": 0.003891
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V3_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:13.029655+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.032248,
+        "stddev_ms": 0.00258,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.259,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.040602,
+        "baseline_stddev_ms": 0.003891
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_TE_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:13.037587+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "TE"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.075878,
+        "stddev_ms": 0.005308,
+        "variant": "TE"
+      },
+      "speedup": {
+        "vs_baseline": 0.5351,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.040602,
+        "baseline_stddev_ms": 0.003891
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V0_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:13.495930+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.089798,
+        "stddev_ms": 0.008971,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.3974,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.035689,
+        "baseline_stddev_ms": 0.004391
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V1_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:13.505108+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.033529,
+        "stddev_ms": 0.003168,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.0644,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.035689,
+        "baseline_stddev_ms": 0.004391
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V2_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:13.513572+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.081648,
+        "stddev_ms": 0.006615,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.4371,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.035689,
+        "baseline_stddev_ms": 0.004391
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V3_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:13.520907+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.033697,
+        "stddev_ms": 0.003016,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.0591,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.035689,
+        "baseline_stddev_ms": 0.004391
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_TE_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:13.528007+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "TE"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.078431,
+        "stddev_ms": 0.005415,
+        "variant": "TE"
+      },
+      "speedup": {
+        "vs_baseline": 0.455,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.035689,
+        "baseline_stddev_ms": 0.004391
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V0_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:14.125350+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.093362,
+        "stddev_ms": 0.00758,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.7752,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.072374,
+        "baseline_stddev_ms": 0.001723
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V1_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:14.135208+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.073302,
+        "stddev_ms": 0.001091,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 0.9873,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.072374,
+        "baseline_stddev_ms": 0.001723
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V2_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:14.143133+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.091538,
+        "stddev_ms": 0.003052,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.7906,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.072374,
+        "baseline_stddev_ms": 0.001723
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_V3_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:14.150837+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.074512,
+        "stddev_ms": 0.001333,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 0.9713,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.072374,
+        "baseline_stddev_ms": 0.001723
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-125m_FFN_TE_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:14.158795+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "TE"
+      },
+      "model": {
+        "name": "OPT-125m FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 768,
+          "out_dim": 3072
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.079294,
+        "stddev_ms": 0.006469,
+        "variant": "TE"
+      },
+      "speedup": {
+        "vs_baseline": 0.9127,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.072374,
+        "baseline_stddev_ms": 0.001723
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V0_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:14.618982+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.082302,
+        "stddev_ms": 0.007911,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.4183,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.034424,
+        "baseline_stddev_ms": 0.004078
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V1_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:14.629231+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.026068,
+        "stddev_ms": 0.003634,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.3205,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.034424,
+        "baseline_stddev_ms": 0.004078
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V2_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:14.638007+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.077365,
+        "stddev_ms": 0.007098,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.4449,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.034424,
+        "baseline_stddev_ms": 0.004078
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V3_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:14.645613+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.026619,
+        "stddev_ms": 0.00465,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.2932,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.034424,
+        "baseline_stddev_ms": 0.004078
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_TE_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:14.652981+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "TE"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.072818,
+        "stddev_ms": 0.006662,
+        "variant": "TE"
+      },
+      "speedup": {
+        "vs_baseline": 0.4727,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.034424,
+        "baseline_stddev_ms": 0.004078
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V0_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:15.126343+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.090045,
+        "stddev_ms": 0.008671,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.5044,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.045417,
+        "baseline_stddev_ms": 0.00395
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V1_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:15.135384+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.034166,
+        "stddev_ms": 0.002806,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.3293,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.045417,
+        "baseline_stddev_ms": 0.00395
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V2_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:15.142619+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.083042,
+        "stddev_ms": 0.007933,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.5469,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.045417,
+        "baseline_stddev_ms": 0.00395
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V3_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:15.149488+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.034238,
+        "stddev_ms": 0.002252,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.3265,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.045417,
+        "baseline_stddev_ms": 0.00395
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_TE_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:15.156279+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "TE"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.075274,
+        "stddev_ms": 0.00699,
+        "variant": "TE"
+      },
+      "speedup": {
+        "vs_baseline": 0.6034,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.045417,
+        "baseline_stddev_ms": 0.00395
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V0_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:15.667785+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.090437,
+        "stddev_ms": 0.007535,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.6602,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.059705,
+        "baseline_stddev_ms": 0.001801
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V1_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:15.677307+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.043248,
+        "stddev_ms": 0.001318,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.3805,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.059705,
+        "baseline_stddev_ms": 0.001801
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V2_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:15.685389+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.086752,
+        "stddev_ms": 0.005667,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.6882,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.059705,
+        "baseline_stddev_ms": 0.001801
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V3_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:15.692238+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.043095,
+        "stddev_ms": 0.002099,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.3854,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.059705,
+        "baseline_stddev_ms": 0.001801
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_TE_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:15.699076+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "TE"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.078441,
+        "stddev_ms": 0.006297,
+        "variant": "TE"
+      },
+      "speedup": {
+        "vs_baseline": 0.7611,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.059705,
+        "baseline_stddev_ms": 0.001801
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V0_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:16.500281+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.124347,
+        "stddev_ms": 0.001943,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 1.013,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.125963,
+        "baseline_stddev_ms": 0.002178
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V1_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:16.509596+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.107019,
+        "stddev_ms": 0.00211,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.177,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.125963,
+        "baseline_stddev_ms": 0.002178
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V2_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:16.517940+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.124009,
+        "stddev_ms": 0.001855,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 1.0158,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.125963,
+        "baseline_stddev_ms": 0.002178
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_V3_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:16.525066+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.108137,
+        "stddev_ms": 0.00186,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.1649,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.125963,
+        "baseline_stddev_ms": 0.002178
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_attn_TE_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:16.532048+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "TE"
+      },
+      "model": {
+        "name": "OPT-1.3b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 2048
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.081247,
+        "stddev_ms": 0.004844,
+        "variant": "TE"
+      },
+      "speedup": {
+        "vs_baseline": 1.5504,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.125963,
+        "baseline_stddev_ms": 0.002178
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V0_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:17.049658+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.081503,
+        "stddev_ms": 0.007557,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.4726,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.038522,
+        "baseline_stddev_ms": 0.004318
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V1_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:17.059416+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.033701,
+        "stddev_ms": 0.001151,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.143,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.038522,
+        "baseline_stddev_ms": 0.004318
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V2_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:17.067149+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.076079,
+        "stddev_ms": 0.007691,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.5063,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.038522,
+        "baseline_stddev_ms": 0.004318
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V3_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:17.074125+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.032757,
+        "stddev_ms": 0.001128,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.176,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.038522,
+        "baseline_stddev_ms": 0.004318
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_TE_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:17.081177+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "TE"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.077187,
+        "stddev_ms": 0.004613,
+        "variant": "TE"
+      },
+      "speedup": {
+        "vs_baseline": 0.4991,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.038522,
+        "baseline_stddev_ms": 0.004318
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V0_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:17.633479+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.092648,
+        "stddev_ms": 0.009059,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.8478,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.078547,
+        "baseline_stddev_ms": 0.00159
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V1_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:17.642432+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.053878,
+        "stddev_ms": 0.00208,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.4579,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.078547,
+        "baseline_stddev_ms": 0.00159
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V2_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:17.650111+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.08638,
+        "stddev_ms": 0.01249,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.9093,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.078547,
+        "baseline_stddev_ms": 0.00159
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V3_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:17.657367+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.053021,
+        "stddev_ms": 0.001454,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.4814,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.078547,
+        "baseline_stddev_ms": 0.00159
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_TE_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:17.665208+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "TE"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.08433,
+        "stddev_ms": 0.00568,
+        "variant": "TE"
+      },
+      "speedup": {
+        "vs_baseline": 0.9314,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.078547,
+        "baseline_stddev_ms": 0.00159
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V0_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:18.499460+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.131436,
+        "stddev_ms": 0.001999,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.9729,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.127874,
+        "baseline_stddev_ms": 0.001819
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V1_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:18.509557+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.114476,
+        "stddev_ms": 0.001689,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.117,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.127874,
+        "baseline_stddev_ms": 0.001819
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V2_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:18.518213+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.131146,
+        "stddev_ms": 0.001623,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.9751,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.127874,
+        "baseline_stddev_ms": 0.001819
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V3_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:18.525622+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.113116,
+        "stddev_ms": 0.001797,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.1305,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.127874,
+        "baseline_stddev_ms": 0.001819
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_TE_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:18.532946+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "TE"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.083788,
+        "stddev_ms": 0.008189,
+        "variant": "TE"
+      },
+      "speedup": {
+        "vs_baseline": 1.5262,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.127874,
+        "baseline_stddev_ms": 0.001819
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V0_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:20.746575+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.393848,
+        "stddev_ms": 0.004518,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.8942,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.352174,
+        "baseline_stddev_ms": 0.006022
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V1_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:20.755914+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.364438,
+        "stddev_ms": 0.001836,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 0.9663,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.352174,
+        "baseline_stddev_ms": 0.006022
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V2_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:20.763562+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.393603,
+        "stddev_ms": 0.002735,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.8947,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.352174,
+        "baseline_stddev_ms": 0.006022
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_V3_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:20.770883+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.364882,
+        "stddev_ms": 0.002691,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 0.9652,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.352174,
+        "baseline_stddev_ms": 0.006022
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-1.3b_FFN_TE_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:20.777665+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "TE"
+      },
+      "model": {
+        "name": "OPT-1.3b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 2048,
+          "out_dim": 8192
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.088362,
+        "stddev_ms": 0.013571,
+        "variant": "TE"
+      },
+      "speedup": {
+        "vs_baseline": 3.9856,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.352174,
+        "baseline_stddev_ms": 0.006022
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V0_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:21.299168+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.081805,
+        "stddev_ms": 0.007629,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.5261,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.043041,
+        "baseline_stddev_ms": 0.001576
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V1_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:21.308644+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.034216,
+        "stddev_ms": 0.001196,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.2579,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.043041,
+        "baseline_stddev_ms": 0.001576
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V2_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:21.315797+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.076773,
+        "stddev_ms": 0.010394,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.5606,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.043041,
+        "baseline_stddev_ms": 0.001576
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V3_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:21.322991+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.034525,
+        "stddev_ms": 0.00222,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.2466,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.043041,
+        "baseline_stddev_ms": 0.001576
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_TE_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:21.330024+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "TE"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.077081,
+        "stddev_ms": 0.006284,
+        "variant": "TE"
+      },
+      "speedup": {
+        "vs_baseline": 0.5584,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.043041,
+        "baseline_stddev_ms": 0.001576
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V0_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:21.930386+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.092505,
+        "stddev_ms": 0.006913,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 1.2696,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.117446,
+        "baseline_stddev_ms": 0.001804
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V1_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:21.940164+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.05422,
+        "stddev_ms": 0.00209,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 2.1661,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.117446,
+        "baseline_stddev_ms": 0.001804
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V2_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:21.947511+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.089705,
+        "stddev_ms": 0.009188,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 1.3092,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.117446,
+        "baseline_stddev_ms": 0.001804
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V3_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:21.954507+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.054408,
+        "stddev_ms": 0.001372,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 2.1586,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.117446,
+        "baseline_stddev_ms": 0.001804
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_TE_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:21.961270+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "TE"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.084275,
+        "stddev_ms": 0.00563,
+        "variant": "TE"
+      },
+      "speedup": {
+        "vs_baseline": 1.3936,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.117446,
+        "baseline_stddev_ms": 0.001804
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V0_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:22.836192+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.126047,
+        "stddev_ms": 0.001711,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 1.4416,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.181707,
+        "baseline_stddev_ms": 0.002394
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V1_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:22.845944+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.110014,
+        "stddev_ms": 0.001705,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.6517,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.181707,
+        "baseline_stddev_ms": 0.002394
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V2_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:22.853418+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.126104,
+        "stddev_ms": 0.00168,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 1.4409,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.181707,
+        "baseline_stddev_ms": 0.002394
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V3_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:22.860913+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.109328,
+        "stddev_ms": 0.001999,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.662,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.181707,
+        "baseline_stddev_ms": 0.002394
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_TE_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:22.868282+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "TE"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.086552,
+        "stddev_ms": 0.00656,
+        "variant": "TE"
+      },
+      "speedup": {
+        "vs_baseline": 2.0994,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.181707,
+        "baseline_stddev_ms": 0.002394
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V0_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:25.064445+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.378063,
+        "stddev_ms": 0.003043,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.9936,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.375656,
+        "baseline_stddev_ms": 0.002753
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V1_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:25.075086+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.355754,
+        "stddev_ms": 0.001416,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.0559,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.375656,
+        "baseline_stddev_ms": 0.002753
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V2_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:25.083763+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.378313,
+        "stddev_ms": 0.002817,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.993,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.375656,
+        "baseline_stddev_ms": 0.002753
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_V3_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:25.093529+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.35923,
+        "stddev_ms": 0.002749,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.0457,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.375656,
+        "baseline_stddev_ms": 0.002753
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_attn_TE_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:25.101796+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "TE"
+      },
+      "model": {
+        "name": "OPT-6.7b attn",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 4096
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.094825,
+        "stddev_ms": 0.012127,
+        "variant": "TE"
+      },
+      "speedup": {
+        "vs_baseline": 3.9616,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.375656,
+        "baseline_stddev_ms": 0.002753
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V0_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:26.152819+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.110265,
+        "stddev_ms": 0.001944,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.9604,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.105895,
+        "baseline_stddev_ms": 0.001724
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V1_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:26.162255+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.100042,
+        "stddev_ms": 0.001434,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 1.0585,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.105895,
+        "baseline_stddev_ms": 0.001724
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V2_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:26.170079+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.110284,
+        "stddev_ms": 0.001599,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.9602,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.105895,
+        "baseline_stddev_ms": 0.001724
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V3_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:26.178235+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.098635,
+        "stddev_ms": 0.001338,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 1.0736,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.105895,
+        "baseline_stddev_ms": 0.001724
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_TE_fp32_1",
+      "timestamp_utc": "2026-02-09T05:00:26.186365+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "TE"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 1,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.097133,
+        "stddev_ms": 0.002908,
+        "variant": "TE"
+      },
+      "speedup": {
+        "vs_baseline": 1.0902,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.105895,
+        "baseline_stddev_ms": 0.001724
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V0_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:27.512995+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.22031,
+        "stddev_ms": 0.003293,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.8939,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.196939,
+        "baseline_stddev_ms": 0.001874
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V1_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:27.522708+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.204486,
+        "stddev_ms": 0.002146,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 0.9631,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.196939,
+        "baseline_stddev_ms": 0.001874
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V2_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:27.530842+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.220207,
+        "stddev_ms": 0.002257,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.8943,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.196939,
+        "baseline_stddev_ms": 0.001874
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V3_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:27.538598+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.204375,
+        "stddev_ms": 0.002357,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 0.9636,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.196939,
+        "baseline_stddev_ms": 0.001874
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_TE_fp32_32",
+      "timestamp_utc": "2026-02-09T05:00:27.546056+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "TE"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 32,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.103394,
+        "stddev_ms": 0.002949,
+        "variant": "TE"
+      },
+      "speedup": {
+        "vs_baseline": 1.9047,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.196939,
+        "baseline_stddev_ms": 0.001874
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V0_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:29.797763+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.379132,
+        "stddev_ms": 0.003814,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.9786,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.371028,
+        "baseline_stddev_ms": 0.002467
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V1_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:29.807945+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.376707,
+        "stddev_ms": 0.015314,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 0.9849,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.371028,
+        "baseline_stddev_ms": 0.002467
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V2_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:29.816539+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.381235,
+        "stddev_ms": 0.003684,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.9732,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.371028,
+        "baseline_stddev_ms": 0.002467
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V3_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:29.823853+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.37608,
+        "stddev_ms": 0.007845,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 0.9866,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.371028,
+        "baseline_stddev_ms": 0.002467
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_TE_fp32_128",
+      "timestamp_utc": "2026-02-09T05:00:29.831380+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "TE"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 128,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.105842,
+        "stddev_ms": 0.004308,
+        "variant": "TE"
+      },
+      "speedup": {
+        "vs_baseline": 3.5055,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 0.371028,
+        "baseline_stddev_ms": 0.002467
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V0_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:38.092454+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V0"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 1.487416,
+        "stddev_ms": 0.018556,
+        "variant": "V0"
+      },
+      "speedup": {
+        "vs_baseline": 0.9217,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 1.370968,
+        "baseline_stddev_ms": 0.020429
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V1_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:38.102023+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V1"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 1.435618,
+        "stddev_ms": 0.011543,
+        "variant": "V1"
+      },
+      "speedup": {
+        "vs_baseline": 0.955,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 1.370968,
+        "baseline_stddev_ms": 0.020429
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V2_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:38.110235+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V2"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 1.488688,
+        "stddev_ms": 0.008815,
+        "variant": "V2"
+      },
+      "speedup": {
+        "vs_baseline": 0.9209,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 1.370968,
+        "baseline_stddev_ms": 0.020429
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_V3_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:38.117871+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "V3"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 1.437421,
+        "stddev_ms": 0.011233,
+        "variant": "V3"
+      },
+      "speedup": {
+        "vs_baseline": 0.9538,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 1.370968,
+        "baseline_stddev_ms": 0.020429
+      }
+    }
+  },
+  {
+    "config": {
+      "benchmark_id": "fused_ln_linear_single_op_OPT-6.7b_FFN_TE_fp32_512",
+      "timestamp_utc": "2026-02-09T05:00:38.124870+00:00",
+      "hardware": {
+        "gpu_vendor": "NVIDIA",
+        "gpu_model": "NVIDIA H100 80GB HBM3",
+        "gpu_count": 1,
+        "gpu_memory_gb": 85.0,
+        "host_cpu": "Intel(R) Xeon(R) Platinum 8480+",
+        "host_ram_gb": 221
+      },
+      "software": {
+        "os": "Linux 6.8.0-62-generic",
+        "driver": "CUDA 12.8",
+        "framework": "PyTorch",
+        "framework_version": "2.10.0+cu128",
+        "runtime": "custom CUDA kernel",
+        "runtime_version": "TE"
+      },
+      "model": {
+        "name": "OPT-6.7b FFN",
+        "precision": "FP32"
+      },
+      "workload": {
+        "batch_size": 512,
+        "dimensions": {
+          "h": 4096,
+          "out_dim": 16384
+        }
+      }
+    },
+    "metrics": {
+      "single_op": {
+        "mean_ms": 0.239724,
+        "stddev_ms": 0.005508,
+        "variant": "TE"
+      },
+      "speedup": {
+        "vs_baseline": 5.7189,
+        "baseline_description": "PyTorch nn.LayerNorm + nn.Linear",
+        "baseline_mean_ms": 1.370968,
+        "baseline_stddev_ms": 0.020429
+      }
+    }
+  }
+]
